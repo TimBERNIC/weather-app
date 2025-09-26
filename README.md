@@ -1,38 +1,88 @@
-# sv
+# ��️ Weather App - SvelteKit 5
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Une application météo moderne et responsive construite avec SvelteKit 5, TypeScript et Tailwind CSS.
 
-## Creating a project
+## ✨ Fonctionnalités
 
-If you're seeing this, you've probably already done this step. Congrats!
+- 🔍 **Recherche de ville** - Saisissez n'importe quelle ville dans le monde
+- ��️ **Météo actuelle** - Température, conditions, ressenti
+- 📊 **Détails météo** - Humidité, pression, visibilité, vent
+- 📅 **Prévisions 7 jours** - Avec icônes météo et températures min/max
+- 🎨 **Effets visuels dynamiques** - Animations selon les conditions météo
+- 📱 **Design responsive** - Optimisé pour mobile et desktop
+- ⚡ **Performance** - Rendu côté client avec SvelteKit 5
 
-```sh
-# create a new project in the current directory
-npx sv create
+## 🛠️ Technologies
 
-# create a new project in my-app
-npx sv create my-app
-```
+- **SvelteKit 5** - Framework moderne avec les runes
+- **TypeScript** - Typage statique
+- **Tailwind CSS** - Styling utilitaire
+- **Vitest** - Tests unitaires
+- **@testing-library/svelte** - Tests de composants
+- **Axios** - Client HTTP
+- **wttr.in API** - Données météo gratuites
 
-## Developing
+## �� Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+# Cloner le projet
+git clone <votre-repo>
+cd sveltkit5-weather-app
 
-```sh
+# Installer les dépendances
+npm install
+
+# Lancer en développement
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# Lancer les tests
+npm test
 ```
 
-## Building
+## �� Structure du projet
 
-To create a production version of your app:
+## 🧪 Tests
 
-```sh
-npm run build
+```bash
+# Tests unitaires
+npm run test:unit
+
+# Tests e2e
+npm run test:e2e
+
+# Tous les tests
+npm test
 ```
 
-You can preview the production build with `npm run preview`.
+## 🎯 Fonctionnalités testées
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- ✅ Navigation entre pages
+- ✅ Encodage des paramètres URL
+- ✅ Rendu des composants
+- ✅ États de chargement
+- ✅ Gestion d'erreurs
+
+## �� Déploiement
+
+L'application est prête pour le déploiement sur :
+
+- **Netlify**
+- **GitHub Pages**
+
+## 📝 API
+
+Utilise l'API gratuite [wttr.in](https://wttr.in) pour les données météo.
+
+## �� Contribution
+
+1. Fork le projet
+2. Créez votre branche (`git checkout -b feature/AmazingFeature`)
+3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+--
