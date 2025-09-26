@@ -90,7 +90,7 @@
 		: weatherType === 'cloudy'
 			? 'bg-gradient-to-br from-gray-400 via-gray-500 to-gray-600'
 			: weatherType === 'rainy'
-				? 'bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800'
+				? 'bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800'
 				: weatherType === 'stormy'
 					? 'bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800'
 					: weatherType === 'snowy'
@@ -195,7 +195,7 @@
 							class="flex h-[180px] w-full flex-col items-center justify-center rounded-lg bg-white/20 p-4 text-center text-white backdrop-blur-sm"
 						>
 							<div class="mb-2 text-sm font-medium">
-								{getNextDays()[index]}
+								{getNextDays()[index + 1]}
 							</div>
 							{#if day.hourly[0]?.weatherIconUrl[0]?.value}
 								<img

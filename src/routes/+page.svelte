@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import WeatherEffect from '$lib/components/WeatherEffect/+page.svelte';
 
 	let city = $state<string>('');
 
